@@ -17,7 +17,7 @@
             "hash": "7ac0ab5bfdb65e98edf874220ec2eadfd5b37761e5d0979cc81ba9b129812ae1"
         }
     },
-	"post_install": "Copy-Item -Path \"$bucketsdir\\whoamikyo-bucket\\licenses\\winrar\\rarreg.key\" -Destination \"$persist_dir\\\"",
+	"post_install": "Copy-Item -Path \"$bucketsdir\\whoamikyo\\licenses\\winrar\\rarreg.key\" -Destination \"$persist_dir\\\"",
 	
     "bin": [
         "Rar.exe",
