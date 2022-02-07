@@ -1,0 +1,45 @@
+{
+    "version": "6.10",
+    "description": "Powerful archive manager",
+    "homepage": "https://rarlab.com/",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.win-rar.com/gtb_priv.html?&L=0"
+    },
+    "notes": "Set up context menu within settings window.",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.rarlab.com/rar/winrar-x64-610.exe#/dl.7z",
+            "hash": "e0a76fd83d8e283d5136e145245f5eb6ecfdb05e88d115f06d660b65248d5f76"
+        },
+        "32bit": {
+            "url": "https://www.rarlab.com/rar/winrar-x32-610.exe#/dl.7z",
+            "hash": "7ac0ab5bfdb65e98edf874220ec2eadfd5b37761e5d0979cc81ba9b129812ae1"
+        }
+    },
+	"post_install": "Copy-Item -Path \"$bucketsdir\\licenses\\winrar\\rarreg.key\" -Destination \"$persist_dir\\\"",
+	
+    "bin": [
+        "Rar.exe",
+        "UnRAR.exe",
+        "WinRAR.exe"
+    ],
+    "shortcuts": [
+        [
+            "WinRAR.exe",
+            "WinRAR"
+        ]
+    ],
+    "persist": "rarreg.key",
+    "checkver": "WinRAR and RAR ([\\d.]+) release",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.rarlab.com/rar/winrar-x64-$cleanVersion.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://www.rarlab.com/rar/winrar-x32-$cleanVersion.exe#/dl.7z"
+            }
+        }
+    }
+}
