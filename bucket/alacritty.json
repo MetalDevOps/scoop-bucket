@@ -14,7 +14,7 @@
         [
             "alacritty.exe",
             "Alacritty",
-            " --config-file .\data\alacritty.yml"
+            "--config-file .\data\alacritty.yml"
         ]
     ],
     "checkver": "github",
