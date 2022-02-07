@@ -9,11 +9,12 @@
     "url": "https://github.com/alacritty/alacritty/releases/download/v0.10.0/Alacritty-v0.10.0-portable.exe#/alacritty.exe",
     "hash": "6253cc8b39c784f0369ab6e307a49c473eb81863df4ec7882ecfb6d7630a8811",
     "bin": "alacritty.exe",
+	"persist": "data",
     "shortcuts": [
         [
             "alacritty.exe",
             "Alacritty",
-            "--working-directory \"%USERPROFILE%\""
+            "--config-file config.yml""
         ]
     ],
     "checkver": "github",
