@@ -1,12 +1,13 @@
 {
     "homepage": "https://github.com/eibol/ffmpeg_batch/",
-    "version": "2.7.4",
+    "version": "2.7.3",
     "license": "LGPL version 3.1 or later",
     "description": "FFmpeg Batch AV Converter.",
     "architecture": {
         "64bit": {
-            "url": "https://sourceforge.net/projects/ffmpeg-batch/files/FFmpeg_Batch_AV_Converter_Portable_2.7.3_x64.zip",
-            "hash": "sha1:37857FD92692DED79E8F1D46DF3EB6A2480654FA"
+            "url": "https://github.com/eibol/ffmpeg_batch/releases/download/2.7.3/FFmpeg_Batch_AV_Converter_Portable_2.7.3_x64.zip#/dl.7z",
+            "hash": "f09507b0d05714eb31c08f6a16f7d41bfd6b6bb0b1d158e0169da6b2ac1d38bf"
+
         }
     },
     "persist": "settings",
@@ -17,15 +18,15 @@
             "FFBatch"
         ]
     ],
-    "checkver": {
-        "url": "https://sourceforge.net/projects/ffmpeg-batch/rss?",
-        "regex": "FFBatch_AV_Converter_Portable_([\\d.]+)_x64.zip"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://sourceforge.net/projects/ffmpeg-batch/files/FFmpeg_Batch_AV_Converter_Portable_$version_x64.zip"
+                "url": "https://github.com/eibol/ffmpeg_batch/releases/download/v$version/FFmpeg_Batch_AV_Converter_Portable_$version_x64.zip#/dl.7z"
             }
+        },
+        "hash": {
+            "url": "$url.sha256"
         }
     }
 }
