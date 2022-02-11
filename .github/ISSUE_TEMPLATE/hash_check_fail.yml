@@ -1,0 +1,26 @@
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+name: Hash check failed
+description: Installation failed due to hash check.
+title: "%%manifest%%@%%version%%: Hash check failed"
+assignees:
+  - JaimeZeng
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit you issue using the following template!
+  - type: textarea
+    id: terminal-output
+    attributes:
+      label: Terminal Output
+      description: "Copy terminal output and paste it."
+      placeholder: |
+        App: %%manifest%%
+        URL: %%url%%
+        ...
+        Expected: %%hash%%
+        Actual: %%hash%%
+        ...
+      render: powershell
+    validations:
+      required: true

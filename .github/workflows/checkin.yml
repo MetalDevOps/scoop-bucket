@@ -1,0 +1,30 @@
+name: Check
+
+on:
+  schedule:
+    - cron: "5 11,23 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: version
+      - name: Install Dependence
+        run: sudo apt install curl jq xxd libxml2-utils -y
+      - name: Check
+        run: bash check.sh
+      - name: Commit
+        run: |
+          git config --local user.email "78083448+JaimeZeng@users.noreply.github.com"
+          git config --local user.name "JaimeZeng"
+          git add .
+          git commit -m "update" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: version
+          github_token: ${{ secrets.GH_TOKEN }}

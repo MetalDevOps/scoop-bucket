@@ -1,0 +1,122 @@
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+name: New manifest request
+description: Request new manifest to be added into this bucket.
+title: "[Request] Add %%applicationName%%"
+labels: ["request", "help wanted"]
+assignees:
+  - JaimeZeng
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit you issue using the following template!
+        By opening this issue you confirm that you have searched for similar issues/PRs here already.
+        Failing to do so will most likely result in closing of this issue without any explanation.
+        Incomplete form details below might also result in closing of the issue.
+  - type: input
+    id: name
+    attributes:
+      label: Package Name
+      description: "name of new package."
+      placeholder: ex. git
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Latest version
+      description: "The version of the app that this manifest installs."
+      placeholder: ex. 3.10.0
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: "A one line string containing a short description of the program. Don’t include the name of the program, if it’s the same as the app’s filename."
+    validations:
+      required: true
+  - type: input
+    id: homepage
+    attributes:
+      label: Homepage
+      description: The home page for the program.
+      placeholder: ex. https://desktop.github.com
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: "A string or hash of the software license for the program. For well-known licenses, please use the identifier found at spdx.org/licenses For other licenses, use the URL of the license, if available. Otherwise, use “Freeware”, “Proprietary”, “Public Domain”, “Shareware”, or “Unknown”, as appropriate. If different files have different licenses, separate licenses with a comma (,). If the entire application is dual licensed, separate licenses with a pipe symbol (|)."
+      multiple: true
+      options:
+        - Apache-2.0
+        - BSD-3-Clause
+        - Freeware
+        - GPL-2.0-only
+        - GPL-2.0-or-later
+        - GPL-3.0-only
+        - GPL-3.0-or-later
+        - ISC
+        - LGPL-2.0-only
+        - LGPL-2.0-or-later
+        - LGPL-2.1-only
+        - LGPL-2.1-or-later
+        - LGPL-3.0-only
+        - LGPL-3.0-or-later
+        - MIT
+        - MS-PL
+        - Proprietary
+        - Public Domain
+        - Shareware
+        - Unlicens
+        - Unknown
+    validations:
+      required: false
+  - type: input
+    id: graphical-interface
+    attributes:
+      label: Graphical interface
+      placeholder: Yes/No
+    validations:
+      required: true
+  - type: input
+    id: portable-version
+    attributes:
+      label: Portable version
+      description: "if Yes please specify if portable mode needs to be enabled and list files/folders needed to be handled on update"
+      placeholder: Yes/No
+    validations:
+      required: true
+  - type: input
+    id: popularity
+    attributes:
+      label: Some indication of popularity/repute
+      description: "GitHub stars/software reviews etc."
+    validations:
+      required: true
+  - type: textarea
+    id: download-links
+    attributes:
+      label: Download link(s)
+      description: "URL(s)/link(s)."
+      placeholder: |
+        https://
+        ...
+      render: powershell
+    validations:
+      required: true
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Else
+      description: "Is there anything else contributors need to know?\n - Files, folders to persist across updates.\n - Installation requirements.\n - ..."
+      placeholder: |
+        Is there anything else contributors need to know?
+          - Files, folders to persist across updates.
+          - Installation requirements.
+          - ...
+      render: powershell
+    validations:
+      required: false
