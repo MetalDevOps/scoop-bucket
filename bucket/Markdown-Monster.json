@@ -1,18 +1,17 @@
 {
     "homepage": "https://markdownmonster.west-wind.com",
     "description": "Markdown editing and weblog publishing tool",
-    "version": "2.2.2.1",
+    "version": "2.3.14.1",
     "license": {
         "identifier": "Proprietary",
         "url": "https://markdownmonster.west-wind.com/purchase.aspx#License"
     },
     "url": "https://west-wind.com/files/MarkdownMonsterPortable.zip",
-    "hash": "319e57f456eb67b39506a70a45f182066554d57ddd9c2f46676e62cffeb9892d",
+    "hash": "8199837dcfdda1006701a5c2dbf18cab14e6ae1da69d9fab87fdb68223d78d55",
     "pre_install": [
-	"if (!(Test-Path \"$dir\\_IsPortable\")) { New-Item \"$dir\\_IsPortable\" -Force | Out-Null }",
-	"if (!(Test-Path \"$persist_dir\\Registered.key\")) { New-Item \"$dir\\Registered.key\" | Out-Null }"
-	
-	],
+        "if (!(Test-Path \"$dir\\_IsPortable\")) { New-Item \"$dir\\_IsPortable\" -Force | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\Registered.key\")) { New-Item \"$dir\\Registered.key\" | Out-Null }"
+    ],
     "bin": [
         "mm.exe",
         "MarkdownMonster.exe",
@@ -25,13 +24,13 @@
         ]
     ],
     "persist": [
-	"PortableSettings", 
-	"Registered.key"
-	],
+        "PortableSettings",
+        "Registered.key"
+    ],
     "checkver": {
         "url": "https://markdownmonster.west-wind.com/download",
         "regex": "<dd><b>([\\d.-]+)",
-		"reverse": "false"
+        "reverse": "false"
     },
     "autoupdate": {
         "url": "https://west-wind.com/files/MarkdownMonsterPortable.zip"
