@@ -13,6 +13,6 @@ jobs:
       - name: Excavate
         uses: ScoopInstaller/GithubActions@main
         env:
-          USER_EMAIL: 78083448+JaimeZeng@users.noreply.github.com
+          USER_EMAIL: github-actions[bot]@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           SKIP_UPDATED: '1'
