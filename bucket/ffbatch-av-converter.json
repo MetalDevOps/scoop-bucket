@@ -1,12 +1,12 @@
 {
-    "version": "2.7.4",
+    "version": "2.7.5",
     "description": "FFmpeg Batch AV Converter.",
     "homepage": "https://ffmpeg-batch.sourceforge.io",
     "license": "LGPL version 3.1 or later",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/ffmpeg-batch/FFmpeg_Batch_AV_Converter_Portable_2.7.4_x64.zip",
-            "hash": "sha1:c139d6030fd951f334a580bc64fe8fae7242ef5e"
+            "url": "https://downloads.sourceforge.net/project/ffmpeg-batch/FFmpeg_Batch_AV_Converter_Portable_2.7.5_x64.zip",
+            "hash": "sha1:d7cbf1ed0687b8c5aefc8a5cc8d179796649f150"
         }
     },
     "bin": "FFBatch.exe",
