@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/ffmpeg-batch/FFmpeg_Batch_AV_Converter_Portable_2.7.5_x64.zip",
-            "hash": "sha1:d7cbf1ed0687b8c5aefc8a5cc8d179796649f150"
+            "hash": "sha1:68258961270bc23b24af21860fd9e7fa12d609ed"
         }
     },
     "bin": "FFBatch.exe",
