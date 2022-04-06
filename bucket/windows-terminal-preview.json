@@ -56,7 +56,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/microsoft/terminal/releases",
+        "url": "https://github.com/microsoft/terminal/releases",
         "regex": "WindowsTerminalPreview_Win11_([\\d.]+)_8wekyb3d8bbwe\\.msixbundle"
     },
     "autoupdate": {
