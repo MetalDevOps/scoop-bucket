@@ -1,11 +1,11 @@
 {
-    "version": "2.9.14-beta1",
+    "version": "2.9.15-beta1",
     "description": "Extend your GitHub workflow beyond your browser.",
     "homepage": "https://desktop.github.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-2.9.14-beta1-x64-full.nupkg",
+            "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-2.9.15-beta1-x64-full.nupkg?env=beta",
             "hash": "sha1:48a8e776064cfbdd1cf9bb6c3d4a3f7dfc7cdf73"
         }
     },
