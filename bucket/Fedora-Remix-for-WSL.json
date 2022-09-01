@@ -1,5 +1,5 @@
 {
-    "version": "35.12.3",
+    "version": "36.0.5",
     "description": "Fedora Remix for WSL is a remix of upstream Fedora software for Windows Subsystem for Linux on Windows 10 and Windows 10 Server.",
     "homepage": "https://www.whitewaterfoundry.com/fedora-remix-for-wsl",
     "license": {
@@ -9,8 +9,8 @@
     "depends": "sudo",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL/releases/download/35.12.3/Fedora-Remix-for-WSL-SL_35.12.3.0_x64_arm64.msixbundle#/dl.7z",
-            "hash": "33d85f57c0cb25414ac26a05943aefffd00c78239f124b023bf28c309dab2130"
+            "url": "https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL/releases/download/36.0.5/Fedora-Remix-for-WSL-SL_36.0.5.0_x64_arm64.msixbundle#/dl.7z",
+            "hash": "521279a71df232ca3bf219f63821768c9923e24f286ee99f833ddc2b892a6222"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\Fedora-Remix-for-WSL-SL_$version.0_x64.msix\" -Removal",
