@@ -19,7 +19,7 @@
     "persist": "settings",
     "checkver": {
         "url": "https://sourceforge.net/projects/ffmpeg-batch/rss?path=/",
-        "regex": "FFmpeg_Batch_AV_Converter_Portable_([\\d.-]+)_x64"
+        "regex": "FFmpeg_Batch_AV_Converter_Portable_(\d+\.\d+\.\d+)_x64"
     },
     "autoupdate": {
         "architecture": {
