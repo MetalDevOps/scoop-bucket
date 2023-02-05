@@ -57,7 +57,7 @@
     ],
     "checkver": {
         "url": "https://github.com/microsoft/terminal/releases",
-        "regex": "WindowsTerminalPreview_Win10_([\\d.]+)_8wekyb3d8bbwe\\.msixbundle"
+        "regex": "WindowsTerminalPreview_Win11_([\\d.]+)_8wekyb3d8bbwe\\.msixbundle"
     },
     "autoupdate": {
         "url": "https://github.com/microsoft/terminal/releases/download/v$version/Microsoft.WindowsTerminalPreview_Win10_$version_8wekyb3d8bbwe.msixbundle#/dl.7z"
