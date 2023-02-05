@@ -7,7 +7,7 @@ Kept up-to-date through the power of GitHub Actions and [scoop-checkver-action](
 ## How to add
 
 ```
-scoop bucket add whoamikyo https://github.com/whoamikyo/scoop-bucket
+scoop bucket add MetalDevops https://github.com/MetalDevops/scoop-bucket
 ```
 
 ## Available Apps
