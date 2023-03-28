@@ -1,5 +1,5 @@
 {
-    "version": "6.85.6300",
+    "version": "6.88.6400",
     "description": "Aida64 Extreme Edition. System information tool with extremely detailed information about hardware and benchmarks to measure the performance of the computer",
     "homepage": "https://www.aida64.com/products/aida64-extreme",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://www.aida64.com/licensing"
     },
     "url": [
-        "http://download.aida64.com/aida64extreme685.zip",
+        "http://download.aida64.com/aida64extreme688.zip",
         "https://gist.githubusercontent.com/Paxxs/d000313f20f0f43631386dac8ead4ca0/raw/26b96c1f6a9109f28c2510b138a7cbf2ed63d4c5/pkey.txt"
     ],
     "hash": [
-        "4bf70a4f8328fcf2833aa7201538b1481e6a1d7b46bc9aa1d154cdad4e8bb768",
+        "a38ff4509c75a7cb2ff7c2677b65fe96328ec307af093d0a272064ea7df13cf5",
         "sha1:2fe5a9b9d22699acd86e40d9778a6b09bc547d6c"
     ],
     "pre_install": [
